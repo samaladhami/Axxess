@@ -1,0 +1,44 @@
+*:focus {
+  outline: none; }
+
+body {
+  text-align: center;
+  background: #ecebeb;
+  height: 100vh; }
+
+header {
+  background-color: #5c5791;
+  font-size: 35px;
+  height: 65px;
+  width: 100%;
+  vertical-align: middle; }
+  header h1 {
+    padding: 10px; }
+
+.number-input {
+  margin-top: 15vh;
+  width: 45%;
+  border-radius: 20px;
+  height: 63px;
+  text-align: center; }
+
+.count {
+  height: 60px;
+  border-radius: 15px;
+  margin: 20px;
+  width: 62px; }
+
+.counter {
+  margin: 5vh 0; }
+  .counter > h2 {
+    font-size: 60px; }
+
+.fingers-and-toes {
+  width: 100%;
+  display: flex;
+  justify-content: space-around; }
+  .fingers-and-toes > div {
+    display: inline-block;
+    height: 21vh;
+    background: azure;
+    width: 42%; }
