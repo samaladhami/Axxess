@@ -1,0 +1,19 @@
+{
+  "name": "axxess",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samaladhami/Axxess.git"
+  },
+  "author": "Samer Aladhami",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samaladhami/Axxess/issues"
+  },
+  "homepage": "https://github.com/samaladhami/Axxess#readme"
+}
