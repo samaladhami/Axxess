@@ -1,3 +1,7 @@
+// CSS Reset
+@import "reset";
+//
+
 $violet: #5c5791;
 $lightgray: #ecebeb;
 
@@ -6,11 +10,8 @@ $lightgray: #ecebeb;
 }
 body{
   text-align: center;
-  background: $lightgray;
   height: 100vh;
-
 }
-
 header{
   background-color: $violet;
   font-size: 35px;
@@ -22,14 +23,18 @@ header{
     padding: 10px;
   }
 }
+section {
+  background: $lightgray;
+}
 .number-input{
   margin-top: 15vh;
   width: 45%;
-  border-radius: 20px;
+  border-radius: 11px;
   height: 63px;
   text-align: center;
 }
-.count{
+.count-button{
+  border-radius: 11px;
   height: 60px;
   border-radius: 15px;
   margin: 20px;
@@ -48,9 +53,10 @@ header{
   justify-content: space-around;
 
   > div{
+    border-radius: 11px;
     display: inline-block;
-    height: 21vh;
-    background: azure;
+    padding: 10vh 0;
+    background: white;
     width: 42%;
   }
 }
