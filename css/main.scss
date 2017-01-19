@@ -7,7 +7,6 @@ $lightgray: #ecebeb;
 $vertical-space: 3vh 0;
 $danger: #ef7b7b;
 
-
 *:focus{
   outline: none;
 }
@@ -32,7 +31,6 @@ section {
   background: $lightgray;
 
   > form{
-
     .number-input{
       margin-top: 6vh;
       width: 45%;
@@ -121,7 +119,6 @@ section {
     margin-left: 0;
   }
 }
-
 @media (max-width: 425px) {
   .counter > h2 {
     font-size: 50px;
