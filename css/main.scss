@@ -122,6 +122,11 @@ section {
   }
 }
 
-@media (min-height: 500px) {
-  $vertical-space: 100vh 0;
+@media (max-width: 425px) {
+  .counter > h2 {
+    font-size: 50px;
+  }
+  .fingers-and-toes {
+    margin: 1vh 0;
+  }
 }

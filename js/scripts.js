@@ -13,7 +13,7 @@ $(document).ready(function(){
   })
 
   $( '#count-button-id' ).click( () => {
-    const inputVal = $( '.number-input' ).val();
+    let inputVal = $( '.number-input' ).val();
     // check the input value
     if ( Number( isNaN( inputVal ) ) || inputVal === '' || Number(inputVal) <= 0){
       //invalid number handler
@@ -73,11 +73,18 @@ $(document).ready(function(){
       });
 
       $('#restart').click( () => {
-        clearInterval( countInterval );
-        startCount();
-        counter = 0;
-        $( '#fingers, #toes' ).removeAttr('style');
-        $( '.counter > h2' ).text( counter );
+        inputVal = $( '.number-input' ).val();
+        if ( Number( isNaN( inputVal ) ) || inputVal === '' || Number(inputVal) <= 0){
+          $( '.number-input' ).addClass( 'invalid-input' );
+          $( '#invalid-input-text' ).css( 'visibility', ' visible' );
+        }
+        else {
+          clearInterval( countInterval );
+          counter = 0;
+          startCount();
+          $( '#fingers, #toes' ).removeAttr('style');
+          $( '.counter > h2' ).text( counter );
+        }
       })
     }
   })

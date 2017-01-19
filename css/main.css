@@ -140,3 +140,9 @@ section {
       background-image: -webkit-linear-gradient(bottom, #ffc0c0, #ef7b7b); }
   .button-group .restart-button {
     margin-left: 0; }
+
+@media (max-width: 425px) {
+  .counter > h2 {
+    font-size: 50px; }
+  .fingers-and-toes {
+    margin: 1vh 0; } }
