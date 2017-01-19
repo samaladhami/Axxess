@@ -56,8 +56,7 @@ legend {
   outline: none; }
 
 body {
-  text-align: center;
-  height: 100vh; }
+  text-align: center; }
 
 header {
   background-color: #8581b7;
@@ -67,24 +66,31 @@ header {
     padding: 13px; }
 
 section {
-  background: #ecebeb; }
-
-.number-input {
-  margin-top: 12vh;
-  width: 45%;
-  border-radius: 11px;
-  height: 63px;
-  text-align: center; }
-
-.count-button, .button-group button {
-  border-radius: 11px;
-  height: 60px;
-  border-radius: 15px;
-  margin: 4vh 0;
-  width: 62px; }
+  background: #ecebeb;
+  height: 100vh; }
+  section > form .number-input {
+    margin-top: 12vh;
+    width: 45%;
+    border-radius: 11px;
+    height: 63px;
+    text-align: center; }
+  section > form .invalid-input {
+    background: #ffc0c0;
+    color: #ef7b7b;
+    border: 1px solid #ef7b7b; }
+  section > form > small {
+    color: #ef7b7b;
+    display: block;
+    visibility: hidden; }
+  section .count-button, section .button-group button, .button-group section button {
+    border-radius: 11px;
+    height: 60px;
+    border-radius: 15px;
+    margin-left: 3vw;
+    width: 62px; }
 
 .counter {
-  margin: 4vh 0; }
+  margin: 3vh 0; }
   .counter > h2 {
     font-size: 60px; }
 
@@ -92,12 +98,16 @@ section {
   width: 100%;
   display: flex;
   justify-content: space-around; }
+  .fingers-and-toes .fingers-active {
+    background-color: #ffcb7d; }
+  .fingers-and-toes .toes-active {
+    background-color: #ff6fb8; }
   .fingers-and-toes > div {
     background: white;
     border-radius: 11px;
     display: inline-block;
     padding: 10vh 0;
-    margin: 4vh 0;
+    margin: 3vh 0;
     width: 42%;
     position: relative; }
     .fingers-and-toes > div small {

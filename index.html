@@ -11,10 +11,11 @@
       <h1>Finger & Toes app</h1>
     </header>
     <section>
-      <div>
-        <input class='number-input' type="text" name="name" value="" placeholder="Enter a number">
-        <button class='count-button' type="button" name="button">Count</button>
-      </div>
+      <form>
+        <input class='number-input' type="text" name="name" value="" placeholder="Enter a number" >
+        <button class='count-button' type="button" name="button" >Count</button>
+        <small id='invalid-input-text'>Please enter a valid number</small>
+      </form>
       <div class="counter">
         <h2>0</h2>
       </div>
@@ -33,5 +34,7 @@
         <button type="button" name="button">Reset</button>
       </div>
     </section>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js" charset="utf-8"></script>
   </body>
 </html>

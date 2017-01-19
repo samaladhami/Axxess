@@ -4,14 +4,16 @@
 
 $violet: #8581b7;
 $lightgray: #ecebeb;
-$vertical-space: 4vh 0;
+$vertical-space: 3vh 0;
+$danger: #ef7b7b;
+
 
 *:focus{
   outline: none;
 }
 body{
   text-align: center;
-  height: 100vh;
+
 }
 header{
   background-color: $violet;
@@ -24,21 +26,37 @@ header{
 }
 section {
   background: $lightgray;
+  height: 100vh;
+
+  > form{
+
+    .number-input{
+      margin-top: 12vh;
+      width: 45%;
+      border-radius: 11px;
+      height: 63px;
+      text-align: center;
+    }
+    .invalid-input{
+      background: #ffc0c0;
+      color: $danger;
+      border: 1px solid $danger;
+    }
+    >small{
+      color: $danger;
+      display: block;
+      visibility: hidden;
+    }
+  }
+  .count-button{
+    border-radius: 11px;
+    height: 60px;
+    border-radius: 15px;
+    margin-left: 3vw;
+    width: 62px;
+  }
 }
-.number-input{
-  margin-top: 12vh;
-  width: 45%;
-  border-radius: 11px;
-  height: 63px;
-  text-align: center;
-}
-.count-button{
-  border-radius: 11px;
-  height: 60px;
-  border-radius: 15px;
-  margin: $vertical-space;
-  width: 62px;
-}
+
 .counter{
   margin: $vertical-space;
 
@@ -50,6 +68,13 @@ section {
   width: 100%;
   display: flex;
   justify-content: space-around;
+
+  .fingers-active{
+    background-color: #ffcb7d;
+  }
+  .toes-active{
+    background-color: #ff6fb8;
+  }
 
   > div{
     background: white;
