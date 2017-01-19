@@ -3,19 +3,19 @@
 $(document).ready(function(){
 
   let counter = 0
-  function removeInvalidNumberMode(){
+  function disableInvalidNumberMode(){
     $( '.number-input' ).removeClass( 'invalid-input' );
     $( '#invalid-input-text' ).css( 'visibility', ' hidden' )
   }
-  // removes invalid number mode when the user clicks on the input field
+  // disables invalid number mode when the user clicks on the input field
   $( '.number-input' ).click( () => {
-    removeInvalidNumberMode()
+    disableInvalidNumberMode()
   })
 
   $( '#count-button-id' ).click( () => {
     const inputVal = $( '.number-input' ).val();
     // check the input value
-    if ( Number( isNaN( inputVal ) ) || inputVal === ''){
+    if ( Number( isNaN( inputVal ) ) || inputVal === '' || Number(inputVal) <= 0){
       //invalid number handler
       $( '.number-input' ).addClass( 'invalid-input' );
       $( '#invalid-input-text' ).css( 'visibility', ' visible' );
@@ -30,16 +30,13 @@ $(document).ready(function(){
       // checks a number if it's divisible by 5, 3 or both
       function checkTheCounter(num){
         if( num % 3 === 0 && num % 5 === 0) {
-          console.log(num % 3 , num % 5 );
           $( '#fingers' ).css( 'background-color', '#ffcb7d' );
           $('#toes').css( 'background-color', '#ff6fb8' );
         }
         else if( num % 3 === 0){
-          console.log(num % 3);
           $( '#fingers' ).css( 'background-color', '#ffcb7d' );
         }
         else if( num % 5 === 0) {
-          console.log(num % 5);
           $( '#toes' ).css( 'background-color', '#ff6fb8' );
         }
       }

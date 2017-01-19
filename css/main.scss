@@ -46,15 +46,16 @@ section {
       color: $danger;
       display: block;
       visibility: hidden;
+      margin-right: 46%;
     }
   }
-  .count-button{
-    border-radius: 11px;
-    height: 60px;
-    border-radius: 15px;
-    margin-left: 3vw;
-    width: 62px;
-  }
+}
+.count-button{
+  border-radius: 11px;
+  height: 60px;
+  border-radius: 15px;
+  margin-left: 3vw;
+  width: 62px;
 }
 
 .counter{

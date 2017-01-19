@@ -81,13 +81,15 @@ section {
   section > form > small {
     color: #ef7b7b;
     display: block;
-    visibility: hidden; }
-  section .count-button, section .button-group button, .button-group section button {
-    border-radius: 11px;
-    height: 60px;
-    border-radius: 15px;
-    margin-left: 3vw;
-    width: 62px; }
+    visibility: hidden;
+    margin-right: 46%; }
+
+.count-button, .button-group button {
+  border-radius: 11px;
+  height: 60px;
+  border-radius: 15px;
+  margin-left: 3vw;
+  width: 62px; }
 
 .counter {
   margin: 3vh 0; }
