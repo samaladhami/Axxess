@@ -72,24 +72,7 @@ $(document).ready(function(){
       });
 
       $('#restart').click( () => {
-        inputVal = $( '.number-input' ).val();
-        if ( Number( isNaN( inputVal ) ) || inputVal === '' || Number(inputVal) <= 0){
-          $( '.number-input' ).addClass( 'invalid-input' );
-          $( '#invalid-input-text' ).css( 'visibility', ' visible' );
-
-        }
-        else {
-          clearInterval( countInterval );
           counter = 0;
-          $( '#count-button-id, .number-input' ).prop( 'disabled',true )
-                                              .css({
-                                                    'opacity': '0.6' ,
-                                                    'cursor' : 'not-allowed'
-                                                });
-          startCount();
-          $( '#fingers, #toes' ).removeAttr('style');
-          $( '.counter > h2' ).text( counter );
-        }
       })
     }
   })
