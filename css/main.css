@@ -56,20 +56,24 @@ legend {
   outline: none; }
 
 body {
-  text-align: center; }
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  height: 100vh;
+  background: #ecebeb; }
 
 header {
   background-color: #8581b7;
   font-size: 35px;
   width: 100%; }
   header h1 {
-    padding: 13px; }
+    padding: 13px;
+    color: #b1ace6;
+    text-shadow: 1px 1px 1px #191919; }
 
 section {
-  background: #ecebeb;
-  height: 100vh; }
+  background: #ecebeb; }
   section > form .number-input {
-    margin-top: 12vh;
+    margin-top: 6vh;
     width: 45%;
     border-radius: 11px;
     height: 63px;
@@ -86,28 +90,42 @@ section {
 
 .count-button, .button-group button {
   border-radius: 11px;
-  height: 60px;
   border-radius: 15px;
   margin-left: 3vw;
-  width: 62px; }
+  height: 65px;
+  width: 82px;
+  background-color: #aee4c0;
+  background-image: -webkit-linear-gradient(top, #f3fff7, #9cb3a4);
+  font-style: italic;
+  font-weight: 900;
+  font-size: 16px;
+  color: #f1f1f1;
+  text-shadow: 1px 1px 1px black; }
+  .count-button:hover, .button-group button:hover {
+    background-image: -webkit-linear-gradient(bottom, #f3fff7, #9cb3a4); }
 
-.counter {
-  margin: 3vh 0; }
-  .counter > h2 {
-    font-size: 60px; }
+.counter > h2 {
+  font-size: 60px;
+  color: #4e4e4e;
+  text-shadow: 1px 1px 1px black; }
 
 .fingers-and-toes {
   width: 100%;
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  border: 1px solid lightgray;
+  margin: 3vh 0; }
   .fingers-and-toes > div {
     background: white;
     border-radius: 11px;
     display: inline-block;
-    padding: 10vh 0;
+    padding: 6vh 0;
     margin: 3vh 0;
     width: 42%;
-    position: relative; }
+    position: relative;
+    box-shadow: 3px 2px 4px lightgrey; }
+    .fingers-and-toes > div h2 {
+      font-size: 1.6em; }
     .fingers-and-toes > div small {
       color: lightgray;
       position: absolute;
@@ -115,7 +133,10 @@ section {
       left: 5px; }
 
 .button-group {
-  display: flex;
-  justify-content: space-between;
-  margin: auto;
-  width: 150px; }
+  padding-bottom: 10px; }
+  .button-group button {
+    background-image: -webkit-linear-gradient(top, #ffc0c0, #ef7b7b); }
+    .button-group button:hover {
+      background-image: -webkit-linear-gradient(bottom, #ffc0c0, #ef7b7b); }
+  .button-group .restart-button {
+    margin-left: 0; }

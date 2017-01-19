@@ -24,20 +24,20 @@ $(document).ready(function(){
       // valid number
       $( '#count-button-id, .number-input' ).prop( 'disabled',true )
                                           .css({
-                                                'opacity': '0.8' ,
+                                                'opacity': '0.6' ,
                                                 'cursor' : 'not-allowed'
                                             });
-      // checks a number if it's divisible by 5, 3 or both
+      // checks if a number divisible by 5, 3 or both
       function checkTheCounter(num){
         if( num % 3 === 0 && num % 5 === 0) {
-          $( '#fingers' ).css( 'background-color', '#ffcb7d' );
-          $('#toes').css( 'background-color', '#ff6fb8' );
+          $( '#fingers' ).css( 'background-color', 'rgb(255, 210, 176)' );
+          $('#toes').css( 'background-color', 'rgb(187, 207, 251)' );
         }
         else if( num % 3 === 0){
-          $( '#fingers' ).css( 'background-color', '#ffcb7d' );
+          $( '#fingers' ).css( 'background-color', 'rgb(255, 210, 176)' );
         }
         else if( num % 5 === 0) {
-          $( '#toes' ).css( 'background-color', '#ff6fb8' );
+          $( '#toes' ).css( 'background-color', 'rgb(187, 207, 251)' );
         }
       }
       //
@@ -50,9 +50,12 @@ $(document).ready(function(){
             clearInterval( countInterval );
           }
           else {
+            $( '.counter > h2' ).hide()
             counter++;
             $( '#fingers, #toes' ).removeAttr('style');
+            $( '.counter > h2' ).fadeIn( 500 )
             $( '.counter > h2' ).text( counter );
+
             checkTheCounter(counter);
           }
         } , 1000 );

@@ -13,7 +13,9 @@ $danger: #ef7b7b;
 }
 body{
   text-align: center;
-
+  font-family: 'Oswald', sans-serif;
+  height: 100vh;
+  background: $lightgray;
 }
 header{
   background-color: $violet;
@@ -22,16 +24,17 @@ header{
 
   h1{
     padding: 13px;
+    color: #b1ace6;
+    text-shadow: 1px 1px 1px #191919;
   }
 }
 section {
   background: $lightgray;
-  height: 100vh;
 
   > form{
 
     .number-input{
-      margin-top: 12vh;
+      margin-top: 6vh;
       width: 45%;
       border-radius: 11px;
       height: 63px;
@@ -52,33 +55,50 @@ section {
 }
 .count-button{
   border-radius: 11px;
-  height: 60px;
   border-radius: 15px;
   margin-left: 3vw;
-  width: 62px;
-}
+  height: 65px;
+  width: 82px;
+  background-color: #aee4c0;
+  background-image: -webkit-linear-gradient(top, #f3fff7, #9cb3a4);
+  font-style: italic;
+  font-weight: 900;
+  font-size: 16px;
+  color: #f1f1f1;
+  text-shadow: 1px 1px 1px black;
 
+  &:hover {
+    background-image: -webkit-linear-gradient(bottom, #f3fff7, #9cb3a4);
+  }
+}
 .counter{
-  margin: $vertical-space;
 
   >h2{
     font-size: 60px;
+    color: #4e4e4e;
+    text-shadow: 1px 1px 1px black;
   }
 }
 .fingers-and-toes{
   width: 100%;
   display: flex;
   justify-content: space-around;
+  border: 1px solid lightgray;
+  margin: $vertical-space;
 
   > div{
     background: white;
     border-radius: 11px;
     display: inline-block;
-    padding: 10vh 0;
+    padding: 6vh 0;
     margin: $vertical-space;
     width: 42%;
     position: relative;
+    box-shadow: 3px 2px 4px lightgrey;
 
+    h2{
+      font-size: 1.6em;
+    }
     small{
       color: lightgray;
       position: absolute;
@@ -88,11 +108,20 @@ section {
   }
 }
 .button-group{
-  display: flex;
-  justify-content: space-between;
-  margin: auto;
-  width: 150px;
+  padding-bottom: 10px;
+
   button{
     @extend .count-button;
+    background-image: -webkit-linear-gradient(top, #ffc0c0, #ef7b7b);
+    &:hover{
+      background-image: -webkit-linear-gradient(bottom, #ffc0c0, #ef7b7b);
+    }
   }
+  .restart-button{
+    margin-left: 0;
+  }
+}
+
+@media (min-height: 500px) {
+  $vertical-space: 100vh 0;
 }
