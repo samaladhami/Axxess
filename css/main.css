@@ -60,33 +60,31 @@ body {
   height: 100vh; }
 
 header {
-  background-color: #5c5791;
+  background-color: #8581b7;
   font-size: 35px;
-  height: 65px;
-  width: 100%;
-  vertical-align: middle; }
+  width: 100%; }
   header h1 {
-    padding: 10px; }
+    padding: 13px; }
 
 section {
   background: #ecebeb; }
 
 .number-input {
-  margin-top: 15vh;
+  margin-top: 12vh;
   width: 45%;
   border-radius: 11px;
   height: 63px;
   text-align: center; }
 
-.count-button {
+.count-button, .button-group button {
   border-radius: 11px;
   height: 60px;
   border-radius: 15px;
-  margin: 20px;
+  margin: 4vh 0;
   width: 62px; }
 
 .counter {
-  margin: 5vh 0; }
+  margin: 4vh 0; }
   .counter > h2 {
     font-size: 60px; }
 
@@ -95,8 +93,21 @@ section {
   display: flex;
   justify-content: space-around; }
   .fingers-and-toes > div {
+    background: white;
     border-radius: 11px;
     display: inline-block;
     padding: 10vh 0;
-    background: white;
-    width: 42%; }
+    margin: 4vh 0;
+    width: 42%;
+    position: relative; }
+    .fingers-and-toes > div small {
+      color: lightgray;
+      position: absolute;
+      bottom: 3px;
+      left: 5px; }
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 150px; }

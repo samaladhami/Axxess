@@ -2,8 +2,9 @@
 @import "reset";
 //
 
-$violet: #5c5791;
+$violet: #8581b7;
 $lightgray: #ecebeb;
+$vertical-space: 4vh 0;
 
 *:focus{
   outline: none;
@@ -15,19 +16,17 @@ body{
 header{
   background-color: $violet;
   font-size: 35px;
-  height: 65px;
   width: 100%;
-  vertical-align: middle;
 
   h1{
-    padding: 10px;
+    padding: 13px;
   }
 }
 section {
   background: $lightgray;
 }
 .number-input{
-  margin-top: 15vh;
+  margin-top: 12vh;
   width: 45%;
   border-radius: 11px;
   height: 63px;
@@ -37,11 +36,11 @@ section {
   border-radius: 11px;
   height: 60px;
   border-radius: 15px;
-  margin: 20px;
+  margin: $vertical-space;
   width: 62px;
 }
 .counter{
-  margin: 5vh 0;
+  margin: $vertical-space;
 
   >h2{
     font-size: 60px;
@@ -53,10 +52,28 @@ section {
   justify-content: space-around;
 
   > div{
+    background: white;
     border-radius: 11px;
     display: inline-block;
     padding: 10vh 0;
-    background: white;
+    margin: $vertical-space;
     width: 42%;
+    position: relative;
+
+    small{
+      color: lightgray;
+      position: absolute;
+      bottom: 3px;
+      left: 5px;
+    }
+  }
+}
+.button-group{
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 150px;
+  button{
+    @extend .count-button;
   }
 }
